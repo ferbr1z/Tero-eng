@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <SpaRoot>..\Frontend\</SpaRoot>
+    <SpaProxyServerUrl>http://localhost:3000</SpaProxyServerUrl>
+    <SpaProxyLaunchCommand>pnpm dev</SpaProxyLaunchCommand>
+    <SpaProxyTimeoutInSeconds>120</SpaProxyTimeoutInSeconds>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services2/**/*.cs" />
+    <Content Remove="Services2/**/*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.11">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.15" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaProxy" Version="10.0.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.11" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.1.0" />
+  </ItemGroup>
+
+</Project>

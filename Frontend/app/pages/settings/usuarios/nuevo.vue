@@ -1,0 +1,3 @@
+<template>
+  <SettingsUsuarioForm />
+</template>

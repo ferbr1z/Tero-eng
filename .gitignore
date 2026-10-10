@@ -1,0 +1,49 @@
+# Operating system and local editor files
+.DS_Store
+.idea/
+.vs/
+.vscode/
+.fleet/
+.history/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.user
+*.userosscache
+*.suo
+*.rsuser
+*.userprefs
+*.sln.docstates
+*.DotSettings.user
+
+# .NET and Aspire build artifacts
+**/[Bb]in/
+**/[Oo]bj/
+**/[Dd]ebug/
+**/[Rr]elease/
+**/artifacts/
+**/TestResults/
+**/coverage*/
+*.coverage
+*.coveragexml
+*.nupkg
+*.snupkg
+*.log
+
+# Nuxt / Node.js build artifacts
+Frontend/node_modules/
+Frontend/.nuxt/
+Frontend/.output/
+Frontend/.data/
+Frontend/.nitro/
+Frontend/.cache/
+Frontend/dist/
+Frontend/logs/
+
+# Local databases and deployment state
+*.db
+*.db-shm
+*.db-wal
+.railway/

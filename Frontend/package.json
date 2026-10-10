@@ -1,0 +1,32 @@
+{
+  "name": "frontend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "NODE_OPTIONS=--max-old-space-size=8192 nuxt build",
+    "dev": "nuxt dev",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "typecheck": "NODE_OPTIONS=--max-old-space-size=8192 nuxt typecheck"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.129",
+    "@internationalized/date": "^3.12.4",
+    "@nuxt/ui": "^4.11.0",
+    "@tanstack/table-core": "^8.21.3",
+    "@vueuse/core": "^14.4.0",
+    "@vueuse/nuxt": "^14.4.0",
+    "nuxt": "^4.5.2",
+    "tailwindcss": "^4.3.3",
+    "vue": "^3.5.42",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.17.0",
+    "eslint": "^10.10.0",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.11"
+  },
+  "packageManager": "pnpm@12.4.1"
+}
